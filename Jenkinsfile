@@ -2,19 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('Copy from Github') {
+        stage('Build') {
             steps {
-                echo 'Successfuly copied'
+                echo 'GitHub Project Building Completed'
             }
         }
-         stage('Test') {
+        stage('Test') {
             steps {
-                echo 'Tested Successfuly'
+                echo 'GitHub All Test Passed'
             }
         }
-         stage('Deploy') {
+        stage('Deploy') {
             steps {
-                echo 'Deployed Successfuly'
+                echo 'GitHub Deployment Done'
             }
         }
     }
